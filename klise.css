@@ -1,0 +1,91 @@
+.done-1 {
+  	color: green;
+  	font-weight:bold;
+	font-size:small;
+}
+
+.done-0 {
+  	color: black;
+  	font-weight:normal;
+	font-size:small;
+}
+
+.target-done-0 {
+  color: red;
+  font-weight:bold;
+  font-size:medium;
+	
+}
+.target-done-1 {
+  color: green;
+  font-weight:bold;
+  font-size:large;
+
+}
+
+.header {
+  color: blue;
+  font-weight:bold;
+  font-size:large;
+	
+}
+
+.tasklisttitle {
+  	color: blue;
+  	font-weight:bold;
+	font-size:small;
+	
+}
+
+.maintitle {
+  	color: blue;
+  	font-weight:bold;
+	font-style:italic;
+	font-size:large;	
+}
+
+.dipnot {
+	font-style:italic;
+
+	
+}
+
+td {
+	text-align:left;
+	vertical-align:top;
+}
+
+#myoutercontainer { position:relative }
+#myinnercontainer { position:absolute; top:50%; height:10em; margin-top:-5em }
+
+.klisebutton {
+   border-top: 1px solid #000000;
+   background: #ed7f09;
+   background: -webkit-gradient(linear, left top, left bottom, from(#de550b), to(#ed7f09));
+   background: -webkit-linear-gradient(top, #de550b, #ed7f09);
+   background: -moz-linear-gradient(top, #de550b, #ed7f09);
+   background: -ms-linear-gradient(top, #de550b, #ed7f09);
+   background: -o-linear-gradient(top, #de550b, #ed7f09);
+   padding: 14px 28px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 24px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.klisebutton:hover {
+   border-top-color: #0d0802;
+   background: #0d0802;
+   color: #f56a00;
+   }
+.klisebutton:active {
+   border-top-color: #030303;
+   background: #030303;
+   }

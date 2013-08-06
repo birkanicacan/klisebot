@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<html ng-app>
+  <head>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script language='javascript' src="klise.js"></script>
+
+    <link rel="stylesheet" href="klise.css">
+	<link rel="stylesheet" href="dist/css/bootstrap.css">
+	<title>Klise Bot</title>
+    <style>
+      body {
+        width: 520px;
+        height: 400px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+      }
+    </style>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <span class="maintitle">&nbsp;Klişe Bot</span><br>
+    <div ng-controller="KliseCtrl">
+
+		&nbsp;&nbsp;<button ng-click="newklise()" id='tweetSubmit'><i class="icon-play"></i>Vur Gelsin!</button>
+	<br>
+	<br>
+	<span id='tweetText'>{{theklise}}</span>
+	<br>
+	<br>
+
+
+
+	<!-- 
+	<span>{{submit()}}</span>
+	<br>
+	<br>
+	<i class='icon-screenshot'></i><span class='header'>{{programname()}} Program Point Target: {{progtarget()}}</span>
+	<br>
+	<i class='icon-share-alt'></i><span class="target-done-{{ifabovetarget()}}">&nbsp;Total points of tasks pitched: {{sum()}}</span>
+		<br>
+		<br>
+	<span class='header'>&nbsp;Task List</span>
+	<table border="1">
+	<tr>
+	<td>
+	{{localsync2()}}
+	<span class="tasklisttitle">&nbsp;&nbsp;Structure Tasks</span>
+      <ul id='selection' class="unstyled">
+        <li ng-repeat="task in structuretasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+  	<span class="tasklisttitle">&nbsp;&nbsp;Extension Task</span>
+        <ul id='selection' class="unstyled">
+          <li ng-repeat="task in extensiontasks">&nbsp;
+            <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+            <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+          </li>
+        </ul>
+	<span class="tasklisttitle">&nbsp;&nbsp;Bidding and Budgeting Tasks</span>
+	<ul class="unstyled">
+        <li ng-repeat="task in billingandbudgetingtasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+
+		<span class="tasklisttitle">&nbsp;&nbsp;Billing Task</span>
+	      <ul class="unstyled">
+	        <li ng-repeat="task in billingtasks">&nbsp;
+	          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+	          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+	        </li>
+	      </ul>		
+  	</td>
+  	<td>
+	<span class="tasklisttitle">&nbsp;&nbsp;Display Network Tasks</span>
+      <ul class="unstyled">
+        <li ng-repeat="task in displaynetworktasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+
+	<span class="tasklisttitle">&nbsp;&nbsp;Advanced Features Tasks</span>
+      <ul class="unstyled">
+        <li ng-repeat="task in advancedfeaturestasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+
+	<span class="tasklisttitle">&nbsp;&nbsp;Education Task</span>
+      <ul class="unstyled">
+        <li ng-repeat="task in educationtasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+
+	<span class="tasklisttitle">&nbsp;&nbsp;Transfer Tasks</span>
+      <ul class="unstyled">
+        <li ng-repeat="task in transferstasks">&nbsp;
+          <input type="checkbox" ng-model="task.done" ng-change='localsync3(task.text,task.done)' ng-true-value=1 ng-false-value=0>
+          <span class="done-{{task.done}}" title="{{task.definition}}">{{task.text}} ({{task.point}})&nbsp;</span>
+        </li>
+      </ul>
+	</td>
+	</tr>
+	</table>
+		-->
+    </div>
+  </body>
+</html>
